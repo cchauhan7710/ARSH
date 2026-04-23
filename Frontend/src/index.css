@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ✅ Add this block right below imports */
+@layer base {
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
+      "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
+  }
+}
+
+/* Your existing code below */
+html, body, * {
+  transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+}
+
+.input {
+  @apply w-full p-3 border rounded-xl mb-3 outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+  background-color: #dadada;
+  color: #1f2023;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1f2023;
+    color: #dadada;
+  }
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("/fonts/SF-Pro/SF-Pro-Text-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("/fonts/SF-Pro/SF-Pro-Display-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Apply globally */
+@layer base {
+  html, body {
+    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}

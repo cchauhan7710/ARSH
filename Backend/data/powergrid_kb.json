@@ -1,0 +1,454 @@
+[
+  {
+    "question": "wifi not working",
+    "answer": "Restart the router, check LAN cable, verify ISP status, and reconnect the device. If issue continues, raise a Network ticket.",
+    "tags": ["wifi", "internet", "network"],
+    "category": "Network",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "vpn not connecting",
+    "answer": "Check internet, confirm VPN credentials, restart VPN client, and try a different network.",
+    "tags": ["vpn", "remote", "network"],
+    "category": "Network",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "scada data not updating",
+    "answer": "Check RTU communication, verify MPLS connectivity, and confirm server status. Escalate immediately if unresolved.",
+    "tags": ["scada", "rtu", "control room"],
+    "category": "SCADA",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "transformer overload alert",
+    "answer": "Verify load readings from SCADA, check relay protection status, and inform substation engineer immediately.",
+    "tags": ["transformer", "overload", "relay"],
+    "category": "Electrical",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "email not working",
+    "answer": "Check internet, verify credentials, check mailbox storage, and reconfigure mail client if required.",
+    "tags": ["email", "mail", "outlook"],
+    "category": "IT",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "system running slow",
+    "answer": "Check CPU and RAM usage, close background apps, scan for malware, and restart.",
+    "tags": ["slow", "system", "computer"],
+    "category": "IT",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "relay tripped",
+    "answer": "Check fault logs, verify feeder condition, and reset only after field inspection.",
+    "tags": ["relay", "trip", "feeder"],
+    "category": "Electrical",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "meter data not visible",
+    "answer": "Check AMR server status, verify modem connection, and restart metering service.",
+    "tags": ["meter", "amr", "billing"],
+    "category": "Metering",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "substation offline",
+    "answer": "Verify power supply, confirm network connectivity, and immediately inform grid control.",
+    "tags": ["substation", "offline", "grid"],
+    "category": "Grid",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "printer not working",
+    "answer": "Check power, cable, reinstall drivers, and verify default printer settings.",
+    "tags": ["printer", "hardware"],
+    "category": "Hardware",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "internet slow",
+    "answer": "Run a speed test, disconnect unused devices, restart router, and check bandwidth usage.",
+    "tags": ["slow", "internet", "network"],
+    "category": "Network",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "password expired",
+    "answer": "Reset password through portal or contact IT support as per security policy.",
+    "tags": ["password", "login"],
+    "category": "Security",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "keyboard not working",
+    "answer": "Reconnect keyboard, try another USB port, update drivers, and restart the system.",
+    "tags": ["keyboard", "hardware"],
+    "category": "Hardware",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "monitor display not working",
+    "answer": "Check HDMI/VGA cable, verify monitor power, and test using another system.",
+    "tags": ["monitor", "display"],
+    "category": "Hardware",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "software installation failed",
+    "answer": "Ensure admin rights, check compatibility, and disable antivirus temporarily if needed.",
+    "tags": ["software", "installation"],
+    "category": "IT",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "billing mismatch",
+    "answer": "Verify meter readings, cross-check usage data, and regenerate billing.",
+    "tags": ["billing", "meter"],
+    "category": "Billing",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "power outage",
+    "answer": "Confirm outage from control room, identify feeder fault, and dispatch maintenance team.",
+    "tags": ["power", "outage"],
+    "category": "Grid",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "ups not charging",
+    "answer": "Check power input, battery health, and replace faulty battery.",
+    "tags": ["ups", "battery"],
+    "category": "Electrical",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "server down",
+    "answer": "Check power supply, UPS, and restart services. Escalate to system admin immediately.",
+    "tags": ["server", "down"],
+    "category": "Server",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "data backup failed",
+    "answer": "Check disk space, verify scheduler, and test manual backup.",
+    "tags": ["backup", "data"],
+    "category": "IT",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "antivirus not updating",
+    "answer": "Check internet, verify license, and restart antivirus service.",
+    "tags": ["antivirus", "security"],
+    "category": "Security",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "unauthorized login detected",
+    "answer": "Disconnect affected system, reset credentials immediately, and inform cyber security team.",
+    "tags": ["hack", "unauthorized"],
+    "category": "Cyber Security",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "network switch not responding",
+    "answer": "Check power feed, reboot switch, and replace faulty port if necessary.",
+    "tags": ["switch", "network"],
+    "category": "Network",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "feeder overload",
+    "answer": "Shift load to parallel feeder and monitor current values continuously.",
+    "tags": ["feeder", "overload"],
+    "category": "Electrical",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "login failed",
+    "answer": "Verify credentials, check domain connectivity, and reset password if required.",
+    "tags": ["login", "authentication"],
+    "category": "Security",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "application crash",
+    "answer": "Check logs, reinstall application, and verify compatibility.",
+    "tags": ["application", "crash"],
+    "category": "IT",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "database connection failed",
+    "answer": "Verify database service status, network connectivity, and credentials.",
+    "tags": ["database", "server"],
+    "category": "Server",
+    "suggested_priority": "High"
+  },
+  
+  {
+    "question": "wifi not working",
+    "answer": "Restart router, check LAN cable, verify ISP status, and reconnect device.",
+    "tags": ["wifi", "internet", "network"],
+    "category": "Network",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "internet slow",
+    "answer": "Run speed test, disconnect unused devices, restart router, and check bandwidth usage.",
+    "tags": ["slow", "internet"],
+    "category": "Network",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "vpn not connecting",
+    "answer": "Verify credentials, check internet, restart VPN service, and change network.",
+    "tags": ["vpn", "remote"],
+    "category": "Network",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "scada data not updating",
+    "answer": "Check RTU communication, MPLS connectivity, and server sync.",
+    "tags": ["scada", "rtu"],
+    "category": "SCADA",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "substation offline",
+    "answer": "Check power input, network connectivity, and inform control room immediately.",
+    "tags": ["substation", "offline"],
+    "category": "Grid",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "transformer overload alert",
+    "answer": "Check load balance, protection relay, and inform field engineer.",
+    "tags": ["transformer", "overload"],
+    "category": "Electrical",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "relay tripped",
+    "answer": "Inspect fault logs and reset only after field verification.",
+    "tags": ["relay", "trip"],
+    "category": "Electrical",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "feeder overload",
+    "answer": "Shift load to parallel feeder and monitor current.",
+    "tags": ["feeder", "overload"],
+    "category": "Electrical",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "power outage",
+    "answer": "Confirm outage source, inspect feeder fault and dispatch maintenance team.",
+    "tags": ["power", "outage"],
+    "category": "Grid",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "server down",
+    "answer": "Check power supply, UPS, restart services and escalate immediately.",
+    "tags": ["server", "down"],
+    "category": "Server",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "database connection failed",
+    "answer": "Verify DB service, network connectivity and credentials.",
+    "tags": ["database", "server"],
+    "category": "Server",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "ups not charging",
+    "answer": "Check power input, battery health, and replace faulty unit.",
+    "tags": ["ups", "battery"],
+    "category": "Electrical",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "meter data not visible",
+    "answer": "Check AMR server, modem signal and restart meter service.",
+    "tags": ["meter", "amr"],
+    "category": "Metering",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "billing mismatch",
+    "answer": "Verify meter readings and recalculate bill.",
+    "tags": ["billing", "meter"],
+    "category": "Billing",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "email not working",
+    "answer": "Check credentials, mailbox storage and mail server connectivity.",
+    "tags": ["email", "outlook"],
+    "category": "IT",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "password expired",
+    "answer": "Reset password through official IT portal.",
+    "tags": ["password", "login"],
+    "category": "Security",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "login failed",
+    "answer": "Verify credentials, domain connectivity and reset password.",
+    "tags": ["login", "auth"],
+    "category": "Security",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "unauthorized login detected",
+    "answer": "Disconnect system immediately and inform cyber security team.",
+    "tags": ["hack", "security"],
+    "category": "Cyber Security",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "antivirus not updating",
+    "answer": "Check internet, license validity and restart antivirus service.",
+    "tags": ["antivirus", "security"],
+    "category": "Security",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "system running slow",
+    "answer": "Check CPU/RAM usage, close apps and restart system.",
+    "tags": ["slow", "system"],
+    "category": "IT",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "application crash",
+    "answer": "Reinstall application and verify system compatibility.",
+    "tags": ["app", "crash"],
+    "category": "IT",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "printer not working",
+    "answer": "Check power, reinstall driver and verify cable.",
+    "tags": ["printer"],
+    "category": "Hardware",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "keyboard not working",
+    "answer": "Reconnect keyboard and update drivers.",
+    "tags": ["keyboard"],
+    "category": "Hardware",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "monitor display not working",
+    "answer": "Check HDMI/VGA cable and test with another system.",
+    "tags": ["monitor"],
+    "category": "Hardware",
+    "suggested_priority": "Low"
+  },
+  {
+    "question": "network switch not responding",
+    "answer": "Check power feed, reboot switch and inspect ports.",
+    "tags": ["switch", "network"],
+    "category": "Network",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "fiber link down",
+    "answer": "Check OTDR report and escalate to network provider.",
+    "tags": ["fiber", "network"],
+    "category": "Network",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "control room display blank",
+    "answer": "Restart display controller and check SCADA service.",
+    "tags": ["control room", "display"],
+    "category": "SCADA",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "amr server down",
+    "answer": "Restart AMR services and check network connectivity.",
+    "tags": ["amr", "server"],
+    "category": "Metering",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "energy audit mismatch",
+    "answer": "Cross-check feeder, DT and meter data.",
+    "tags": ["audit", "energy"],
+    "category": "Billing",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "ct pt failure",
+    "answer": "Isolate feeder immediately and replace defective CT/PT.",
+    "tags": ["ctpt", "protection"],
+    "category": "Electrical",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "grid frequency fluctuation",
+    "answer": "Adjust load and synchronize generation sources.",
+    "tags": ["frequency", "grid"],
+    "category": "Grid",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "backup failed",
+    "answer": "Check disk space, scheduler and test manual backup.",
+    "tags": ["backup"],
+    "category": "IT",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "fire alarm triggered in substation",
+    "answer": "Evacuate area immediately and inform fire safety team.",
+    "tags": ["fire", "safety"],
+    "category": "Safety",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "earth fault detected",
+    "answer": "Isolate feeder and perform insulation testing.",
+    "tags": ["earth", "fault"],
+    "category": "Electrical",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "oil leakage from transformer",
+    "answer": "Switch off immediately and inform maintenance team.",
+    "tags": ["transformer", "oil"],
+    "category": "Electrical",
+    "suggested_priority": "High"
+  },
+  {
+    "question": "cctv not working",
+    "answer": "Check power input, DVR status and network feed.",
+    "tags": ["cctv", "security"],
+    "category": "Security",
+    "suggested_priority": "Medium"
+  },
+  {
+    "question": "biometric not working",
+    "answer": "Restart device and verify network connection.",
+    "tags": ["biometric"],
+    "category": "Security",
+    "suggested_priority": "Low"
+  }
+
+
+]
+
