@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
   const [form, setForm] = useState({
@@ -16,6 +17,7 @@ export default function Signup() {
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
   const [cooldown, setCooldown] = useState(0);
+  const navigate = useNavigate();
 
   // Countdown timer
   useEffect(() => {
@@ -78,7 +80,7 @@ export default function Signup() {
         { email: form.email, otp: otpValue }
       );
       setMsg(res.data.message || "✅ Account verified!");
-      setTimeout(() => (window.location.href = "/login"), 1500);
+      setTimeout(() => navigate("/login"), 1500);
     } catch (err) {
       console.error(err);
       setMsg(err.response?.data?.message || "❌ Incorrect OTP.");

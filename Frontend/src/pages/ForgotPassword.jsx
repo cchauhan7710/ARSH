@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function ForgotPassword() {
 
@@ -11,6 +12,7 @@ export default function ForgotPassword() {
 
   const [timer,setTimer] = useState(60);
   const [loading,setLoading] = useState(false);
+  const navigate = useNavigate();
 
   // ================= SEND OTP =================
   const sendOTP = async(e)=>{
@@ -56,7 +58,7 @@ export default function ForgotPassword() {
     try{
       await axios.post(`${import.meta.env.VITE_API_BASE_URL || "http://localhost:5000"}/api/auth/reset-password`,{ email, newPass });
       setMsg("Password Updated Successfully 🎉");
-      setTimeout(()=> window.location.href="/login",2000);
+      setTimeout(()=> navigate("/login"),2000);
     }catch{
       setMsg("Reset Failed ❌");
     }

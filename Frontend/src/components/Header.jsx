@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { toggleTheme } from "../utils/theme.js";
 
@@ -19,6 +19,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(() => localStorage.getItem("theme") === "dark");
   const [user, setUser] = useState({ name: "", role: "", token: "" });
+  const navigate = useNavigate();
 
   useEffect(() => {
     const name = localStorage.getItem("name");
@@ -40,7 +41,7 @@ export default function Header() {
 
   const handleLogout = () => {
     localStorage.clear();
-    window.location.href = "/login";
+    navigate("/login");
   };
 
   const navItems = [

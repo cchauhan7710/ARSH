@@ -2,10 +2,12 @@ import { useState } from "react";
 import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
   const [msg, setMsg] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -26,13 +28,13 @@ export default function Login() {
         const role = res.data.user.role;
 
         if (role === "headadmin") {
-          window.location.href = "/headadmin-dashboard";
+          navigate("/headadmin-dashboard");
         } else if (role === "admin") {
-          window.location.href = "/admin-dashboard";
+          navigate("/admin-dashboard");
         } else if (role === "technician") {
-          window.location.href = "/tech-dashboard";
+          navigate("/tech-dashboard");
         } else {
-          window.location.href = "/dashboard";
+          navigate("/dashboard");
         }
       }, 800);
 
